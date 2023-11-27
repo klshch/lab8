@@ -1,0 +1,16 @@
+{% from 'render_field.html' import render_field %}
+{% extends "base.html" %}
+
+{% block title %} Account {% endblock %}
+
+{% block content %}
+
+<h1>Account page</h1>
+<br>
+<div class="d-flex justify-content-center align-items-center">
+    <div class="mt-4">
+        <h3 class="title">{{current_user.username}}</h3>
+    </div>
+</div>
+
+{% endblock %}
